@@ -7,7 +7,10 @@ namespace vgd21_bootcamp_konnerl
         static void Main(string[] args)
         {
 
-            Storing.Initialize();
+            // Storing.Initialize();
+            //Storing.DemoVariables();
+            //Storing.ReadingInput();
+            Storing.UsingArrays();
 
 
             Console.WriteLine("Press Any Key to Exit");
