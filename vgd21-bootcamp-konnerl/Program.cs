@@ -7,6 +7,7 @@ namespace vgd21_bootcamp_konnerl
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();
         }
     }
