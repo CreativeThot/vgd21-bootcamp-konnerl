@@ -36,7 +36,7 @@ namespace vgd21_bootcamp_konnerl
 
             Console.WriteLine("Health:\t\t" + health);
             Console.WriteLine("Full Name:\t\t{0}  [{1}]", playerFullName, firstInitial);
-            Console.WriteLine("Sanity:\t\t{0}\nIs ALive?:\t\t{1}", Sanity, isAsleep);
+            Console.WriteLine("Sanity:\t\t{0}\nIs Asleep?:\t\t{1}", Sanity, isAsleep);
         }
 
         public static void ReadingInput ()
@@ -44,11 +44,9 @@ namespace vgd21_bootcamp_konnerl
             Console.Write("What is your name? > ");
             string playername = Console.ReadLine();
             Console.WriteLine("Hello, {0}! Welcome to the Wonderland!", playername);
-            Console.Write("How old are you (in years? > ");
-            int ageInYears = Convert.ToInt16(Console.ReadLine());
-            int months = ageInYears * 12;
-            float days = ageInYears * 365.25f;
-            Console.WriteLine("You are {0} months old. You are {1} days old", months, days);
+            Console.Write("What is your favorite character in Wonderland? > ");
+            string charactername = Console.ReadLine();
+            Console.WriteLine("What a fine choice~");
 
         }
 
@@ -67,7 +65,7 @@ namespace vgd21_bootcamp_konnerl
             // while (true) 
             // {
             int num = random.Next(5);
-            Console.WriteLine("You encounter {0} in a Card Kingdom. They have {1} health", enemyName[num], enemyHealth[num]);
+            Console.WriteLine("You encounter {0} in the Card Kingdom. They have {1} health", enemyName[num], enemyHealth[num]);
             enemyHealth[num]--;
             //}   
         }
