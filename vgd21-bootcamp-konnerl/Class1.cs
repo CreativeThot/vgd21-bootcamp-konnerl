@@ -53,12 +53,12 @@ namespace vgd21_bootcamp_konnerl
         public static void UsingArrays()
         {
             string[] enemyName = new string[6];
-            enemyName[0] = "Spade Foot Soldier";
-            enemyName[1] = "Heart Foot Soldier";
-            enemyName[2] = "Clover Foot Soldier";
-            enemyName[3] = "Diamond Foot Soldier";
-            enemyName[4] = "Queen of Hearts";
-            enemyName[5] = "King of Hearts";
+            enemyName[0] = "a Spade Foot Soldier";
+            enemyName[1] = "a Heart Foot Soldier";
+            enemyName[2] = "a Clover Foot Soldier";
+            enemyName[3] = "a Diamond Foot Soldier";
+            enemyName[4] = "the Queen of Hearts";
+            enemyName[5] = "the King of Hearts";
             int[] enemyHealth = new int[6] { 25, 25, 25, 25, 50, 1};
 
             System.Random random = new System.Random();
