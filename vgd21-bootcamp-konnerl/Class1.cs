@@ -4,8 +4,19 @@ using System.Text;
 
 namespace vgd21_bootcamp_konnerl
 {
+
     public static class Storing
     {
+        //Creat an enum
+        enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+        //Structs start here
+        struct _enemy
+        {
+            public string name;
+            public int health;
+            public bool isAlive;
+            public float damage;
+        }
 
         //Our first method
         public static void Initialize()
@@ -17,22 +28,22 @@ namespace vgd21_bootcamp_konnerl
         //Our second method
         public static void DemoVariables()
         {
-            int employeeID = 5002;
-            char firstInitial = 'K';
-            float bodyTemp = 98.4f;
-            bool isAlive = true;
-            string employyeFullName = "Konner Lewis";
+            int health = 5002;
+            char firstInitial = 'A';
+            float Sanity = 100f;
+            bool isAsleep = true;
+            string playerFullName = "Alice";
 
-            Console.WriteLine("Enployee ID:\t\t" + employeeID);
-            Console.WriteLine("Full Name:\t\t{0}  [{1}]", employyeFullName, firstInitial);
-            Console.WriteLine("Body Temp:\t\t{0}\nIs ALive?:\t\t{1}", bodyTemp, isAlive);
+            Console.WriteLine("Health:\t\t" + health);
+            Console.WriteLine("Full Name:\t\t{0}  [{1}]", playerFullName, firstInitial);
+            Console.WriteLine("Sanity:\t\t{0}\nIs ALive?:\t\t{1}", Sanity, isAsleep);
         }
 
         public static void ReadingInput ()
         {
             Console.Write("What is your name? > ");
             string playername = Console.ReadLine();
-            Console.WriteLine("Hello, {0}! Welcome to the Dungeon!!!", playername);
+            Console.WriteLine("Hello, {0}! Welcome to the Wonderland!", playername);
             Console.Write("How old are you (in years? > ");
             int ageInYears = Convert.ToInt16(Console.ReadLine());
             int months = ageInYears * 12;
@@ -43,20 +54,52 @@ namespace vgd21_bootcamp_konnerl
 
         public static void UsingArrays()
         {
-            string[] enemyName = new string[5];
-            enemyName[0] = "Evan the Evil";
-            enemyName[1] = "Katelehn the Killer";
-            enemyName[2] = "Sawyer the Slasher";
-            enemyName[3] = "Cody the Crusher";
-            enemyName[4] = "Jim the Jester";
+            string[] enemyName = new string[6];
+            enemyName[0] = "Spade Foot Soldier";
+            enemyName[1] = "Heart Foot Soldier";
+            enemyName[2] = "Clover Foot Soldier";
+            enemyName[3] = "Diamond Foot Soldier";
+            enemyName[4] = "Queen of Hearts";
+            enemyName[5] = "King of Hearts";
+            int[] enemyHealth = new int[6] { 25, 25, 25, 25, 50, 1};
 
             System.Random random = new System.Random();
             // while (true) 
-               // {
-                int num = random.Next(5);
-                Console.WriteLine("You encounter {0} in a dark dungeon.", enemyName[num]);
+            // {
+            int num = random.Next(5);
+            Console.WriteLine("You encounter {0} in a Card Kingdom. They have {1} health", enemyName[num], enemyHealth[num]);
+            enemyHealth[num]--;
             //}   
-          }  
+        }
+
+        public static void ConstantsEnumStruts()
+        {
+            //Constants
+            const double pi = 3.145926535;
+            Console.WriteLine(pi);
+            //pi = 314; //You cannot change this
+
+            //Enums short for "enumerators"
+            var dayOfWeek = Days.Sunday;
+            Console.WriteLine("The day of the week is {0}", dayOfWeek);
+            if (dayOfWeek == Days.Saturday || dayOfWeek == Days.Sunday)
+            {
+                Console.WriteLine("It's the weekend . . . yay!");
+            }else
+            {
+                Console.WriteLine("It's a work day . . . bummer~");
+            }
+
+            //Structs 
+            _enemy TheUnknown;
+            TheUnknown.name = "The Jester";
+            TheUnknown.health = 120;
+            TheUnknown.isAlive = true;
+            TheUnknown.damage = 5.4f;
+
+            TheUnknown.health--;
+            Console.WriteLine("{0} has health of {1} ", TheUnknown.name, TheUnknown.health);
+        }
 
     }//public static class Storing
 }
