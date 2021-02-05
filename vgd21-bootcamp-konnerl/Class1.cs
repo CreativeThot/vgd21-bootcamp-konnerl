@@ -47,7 +47,7 @@ namespace vgd21_bootcamp_konnerl
             Console.Write("What is your favorite character in Wonderland? > ");
             string charactername = Console.ReadLine();
             Console.WriteLine("What a fine choice~");
-
+            Console.WriteLine("Let us tread forward to the Card Kingdom, ruled by a mild-tempered ruler");
         }
 
         public static void UsingArrays()
@@ -67,6 +67,7 @@ namespace vgd21_bootcamp_konnerl
             int num = random.Next(5);
             Console.WriteLine("You encounter {0} in the Card Kingdom. They have {1} health", enemyName[num], enemyHealth[num]);
             enemyHealth[num]--;
+            Console.WriteLine("All you can do is flee, like you did in the real world~");
             //}   
         }
 
