@@ -10,11 +10,13 @@ namespace vgd21_bootcamp_konnerl
             //Storing.Initialize();
             Storing.DemoVariables();
             Storing.ReadingInput();
+            Operations.Logic();
             Storing.UsingArrays();
             //Storing.ConstantsEnumStruts();
 
             //Operations.Arithmetic();
-           // Operations.Comparison();
+            //Operations.Comparison();
+            //Operations.Ternary();
 
 
             Console.WriteLine("Press Any Key to Wake Up");

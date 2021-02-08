@@ -65,7 +65,7 @@ namespace vgd21_bootcamp_konnerl
             // while (true) 
             // {
             int num = random.Next(5);
-            Console.WriteLine("You encounter {0} in the Card Kingdom. They have {1} health", enemyName[num], enemyHealth[num]);
+            Console.WriteLine("These questions and answers flow through your mind as you encounter {0} in the Card Kingdom. They have {1} health", enemyName[num], enemyHealth[num]);
             enemyHealth[num]--;
             Console.WriteLine("All you can do is flee, like you did in the real world~");
             //}   
