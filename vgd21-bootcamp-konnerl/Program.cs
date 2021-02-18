@@ -8,6 +8,7 @@ namespace vgd21_bootcamp_konnerl
         {
 
             //Storing.Initialize();
+            Statements.Switching();
             vgd21_bootcamp_konnerl.DemoVariables();
             Statements.ForEachIterations();
             vgd21_bootcamp_konnerl.ReadingInput();
@@ -22,7 +23,6 @@ namespace vgd21_bootcamp_konnerl
             //MadLibs.Execute();
 
             //Statements.BranchingIf();
-            //Statements.Switching();
             //Statements.ForLoop();
             //Statements.WhileLoops();
             //Statements.LoopingArrays();

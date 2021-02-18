@@ -33,7 +33,7 @@ namespace vgd21_bootcamp_konnerl
 
         public static void Switching()
         {
-            int d = 365;
+            int d = 26;
             string day = "";
 
             switch (d % 7) //No ; after starting a switch (using %7 to wrap days in weeks)
