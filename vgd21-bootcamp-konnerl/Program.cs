@@ -8,18 +8,25 @@ namespace vgd21_bootcamp_konnerl
         {
 
             //Storing.Initialize();
-            //Storing.DemoVariables();
-            //Storing.ReadingInput();
-            //Operations.Logic();
-            //Storing.UsingArrays();
+            vgd21_bootcamp_konnerl.DemoVariables();
+            Statements.ForEachIterations();
+            vgd21_bootcamp_konnerl.ReadingInput();
+            Operations.Logic();
+            vgd21_bootcamp_konnerl.UsingArrays();
             //Storing.ConstantsEnumStruts();
 
             //Operations.Arithmetic();
             //Operations.Comparison();
             //Operations.Ternary();
 
-            MadLibs.Execute();
-              
+            //MadLibs.Execute();
+
+            //Statements.BranchingIf();
+            //Statements.Switching();
+            //Statements.ForLoop();
+            //Statements.WhileLoops();
+            //Statements.LoopingArrays();
+            
 
 
             Console.WriteLine("Press Any Key to Wake Up");
