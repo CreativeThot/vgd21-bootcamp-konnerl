@@ -8,12 +8,12 @@ namespace vgd21_bootcamp_konnerl
         {
 
             //Storing.Initialize();
-            Statements.Switching();
-            vgd21_bootcamp_konnerl.DemoVariables();
-            Statements.ForEachIterations();
-            vgd21_bootcamp_konnerl.ReadingInput();
-            Operations.Logic();
-            vgd21_bootcamp_konnerl.UsingArrays();
+            //Statements.Switching();
+            //vgd21_bootcamp_konnerl.DemoVariables();
+            //Statements.ForEachIterations();
+            //vgd21_bootcamp_konnerl.ReadingInput();
+            //Operations.Logic();
+            //vgd21_bootcamp_konnerl.UsingArrays();
             //Storing.ConstantsEnumStruts();
 
             //Operations.Arithmetic();
@@ -26,8 +26,8 @@ namespace vgd21_bootcamp_konnerl
             //Statements.ForLoop();
             //Statements.WhileLoops();
             //Statements.LoopingArrays();
-            
 
+            MiniDC.PlayGame();
 
             Console.WriteLine("Press Any Key to Wake Up");
             Console.ReadKey();
