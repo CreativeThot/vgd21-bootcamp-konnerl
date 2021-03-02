@@ -28,6 +28,8 @@ namespace vgd21_bootcamp_konnerl
             //Statements.LoopingArrays();
 
             MiniDC.PlayGame();
+            ErrorTrapping.DontCatchRunTime();
+            ErrorTrapping.CatchRunTime();
 
             Console.WriteLine("Press Any Key to Wake Up");
             Console.ReadKey();
