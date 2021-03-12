@@ -27,9 +27,9 @@ namespace vgd21_bootcamp_konnerl
             //Statements.WhileLoops();
             //Statements.LoopingArrays();
 
-            //MiniDC.PlayGame();
-            //ErrorTrapping.DontCatchRunTime();
-            //ErrorTrapping.CatchRunTime();
+            MiniDC.PlayGame();
+            ErrorTrapping.DontCatchRunTime();
+            ErrorTrapping.CatchRunTime();
 
             //MakingMethods.ReportBodyTemp();
             //double tempC = MakingMethods.ConvertFtoC(31);
@@ -38,7 +38,8 @@ namespace vgd21_bootcamp_konnerl
             //Console.WriteLine(MakingMethods.Area(9.87f));
             //Console.WriteLine(MakingMethods.Area(4));
             //Console.WriteLine(MakingMethods.Area(3f, 4f));
-            MakingMethods.TestThem();
+            //MakingMethods.TestThem();
+            FileWork.Commander();
 
 
             Console.WriteLine("Press Any Key to Wake Up");
